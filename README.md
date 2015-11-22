@@ -7,4 +7,4 @@ Spark Scala code which does the following:<br>
 Execute Spark on YARN
 spark-submit --class "com.spark.scala.MqttSparkClient" mqttsparkclient-1.0.jar
 
-Work in Progress
+# Work in Progress
