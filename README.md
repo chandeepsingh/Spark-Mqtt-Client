@@ -1,7 +1,7 @@
 # Spark Mqtt Client
 
 Spark Scala code which does the following:<br>
-1. Streaming client which connects to a MQTT feed on a remote host<br>
+1. Streaming client connects to a MQTT feed on a remote host<br>
 2. Computes per key avg, max and min for every window of 90 seconds<br>
 
 Execute Spark on YARN
