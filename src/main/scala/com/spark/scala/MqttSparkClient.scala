@@ -12,14 +12,14 @@ object MqttSparkClient {
 
   def main(args: Array[String]) {
 
-    // MQTT Broker Hostname and topic
+    // MQTT broker url and topic
     val brokerUrl = "tcp://mqtt_broker_hostname:1883"
     val topic = "mqtt_topic"
 
     val sparkConf = new SparkConf().setAppName("CS-Mqtt-Spark-Client")
     val ssc = new StreamingContext(sparkConf, Seconds(90))
 
-    // Create stream
+    // Create Mqtt stream
     val input_stream = MQTTUtils.createStream(ssc, brokerUrl, topic, StorageLevel.MEMORY_ONLY_2)
     
     // Cleanse input data
