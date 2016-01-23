@@ -11,5 +11,3 @@ spark-submit --class "com.spark.scala.MqttSparkClient" mqttsparkclient-1.0.jar
 <b>Component Versions: </b><br>
 CDH 5.4.8<br>
 Spark 1.3.0 <br>
-
-# Work in Progress
